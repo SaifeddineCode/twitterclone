@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 19px;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* The left-side */
+
+i{
+    color: white;
+}
+
+
+.father {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+
+.left-side{
+    padding: 7px 0px 0px 50px;
+    /* width: 320px; */
+    width: 23%;
+    border-width: 0px 1px 0px 0px;
+    border-color: gray;
+    border-style: solid;
+    height: 100%;   
+    position: fixed;
+}
+
+@media (max-width:1200px){
+   .left-side{
+        width: 10% !important;
+        padding: 7px 0px 0px 10px;
+    }
+}
+
+
+/*nav-item*/
+
+
+@media (max-width:1200px){
+    .nav-item{
+        display: none !important;
+    }
+}
+
+
+.logo-theme .dark-mode{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+.left-side .main-icon {
+    padding: 0px 0px 10px 0px ;
+    font-size: 30px;
+    padding: 10px;
+    cursor:pointer;
+}
+.left-side .main-icon:hover{
+    border-radius: 50%;
+    background-color:  #14171A;
+}
+.left-side nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side nav div {
+    padding: 15px;
+    border-radius: 30px;
+    cursor:pointer;
+    width: fit-content; /*width tayakhod eala 2adi 2addo hahah*/
+}
+.left-side nav div:hover{
+    background-color: #14171A ;
+}
+.left-side nav div span {
+    padding: 0px 0px 0px 15px; 
+    display: inline;    
+}
+
+.left-side div i {
+    font-size: 22px;
+}
+
+.left-side nav .btn {
+    border-radius: 40px;
+    background-color: #00acee;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin-left: -9px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+@media (max-width:1200px){
+    
+.left-side nav .btn .tweet {
+    display: none;
+}
+
+}
+
+.feather{
+    display: none;
+}
+
+@media (max-width:1200px){
+    
+.feather{
+    display: block !important;
+}
+
+}
+
+.left-side nav .short-profil {
+    display: flex;
+    margin-top: 92px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+
+
+.left-side nav .short-profil img{
+    width:45px;
+    border-radius: 50%;
+}
+
+
+.left-side nav .short-profil  {
+    font-size:15px ;
+    margin: 18px 0px 0px -19px;
+}
+.left-side nav .short-profil span {
+    color: gray;
+}
+
+.left-side nav .short-profil .profil-data h3 {
+margin-left: 15px;
+}
+
+@media (max-width:1200px){
+    .short-profil .profil-data {
+       display: none;
+    }
+}
+
+
+.left-side nav .short-profil .profil-data {
+    padding: 4px 9px 0px 0px;
+    width: fit-content; 
+}
+
+.left-side nav .short-profil .more-aboutprofil {
+    margin: 15px 0px 0px 50px ;
+}
+
+@media (max-width:1200px){
+    .more-aboutprofil {
+       display: none;
+    }
+}
+
+/* ************************************************************************************************* */
+/* The beginning of the main section*/
+main {
+    /*bad idea to do that*/
+    margin-left: 23%;
+    width: 47%;
+}
+
+@media (max-width:1200px){
+    main{
+        margin-left: 10%;
+    }
+}
+
+main .publications {
+    padding: 10px;
+    width: 629px;
+    border-width: 0px 0.5px 0.5px 0px;
+    border-color:gray;
+    border-style: solid;
+}
+
+.publications .partone {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 14px;
+}
+
+
+.publications .parttwo {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+.publications .parttwo img {
+    width:45px ;
+    border-radius: 50%;
+}
+.publications .parttwo input{
+    background-color: black;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    width: 100%;
+}
+
+
+.publications .partthree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    width: 530px;
+}
+
+
+.publications .partthree .edits a{
+    padding: 0px 5px 0px 5px;
+}
+.publications .partthree .edits a i {
+    color: #00acee;
+}
+
+.publications .partthree .submit-btn {
+    background-color:#00acee;
+    opacity: 0.6;
+    color: white;
+    padding: 7px 20px 7px 20px ;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+main .posts {
+    display: flex;
+    padding:10px 0px 10px 20px;
+    border-width: 0px 0.5px 0.5px 0.5px ;
+    border-color: gray;
+    border-style: solid;
+    width: 629px;
+}
+
+main .posts img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+main .posts .infos {
+    padding-left: 10px;
+}
+
+main .posts .infos .data span{
+    font-size: 15px;
+    color: gray;
+}
+main .posts .infos .hash{
+    color: #00acee;
+}
+main .posts .infos .data h3{
+    display: inline;
+    font-size: 15px;
+
+}
+
+main .posts .infos .text{
+    margin-top: 5px;
+}
+main .posts .infos .text  img {
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+}
+
+
+
+main .posts .engagement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin-top:10px;
+}
+
+main .posts .engagement span {
+    color: gray;
+    margin-left: -42px;
+    font-size: 14px;
+}
+
+main .posts .engagement a i {
+    color: gray;
+}
+
+
+/* ************************************************************************************************* */
+
+.right-side{
+    padding: 10px 10px 0px 0px;
+    width: 380px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+@media (max-width:1200px){
+    .right-side{
+        display: none;
+        
+    }
+}
+
+
+.right-side input {
+    border-radius:30px;
+    padding: 10px 30px 10px 30px ;
+    width: 100%;
+    outline:none;
+    border: none;
+    background-color: #17202A ;
+    color: white;
+}
+
+
+
+.right-side .alltrends {
+    margin-top: 15px;
+    background-color: #17202A ;
+    border-radius: 30px;
+
+}
+.right-side .alltrends h3{
+    font-size: 19px;
+    padding: 15px 20px 15px 25px ;
+}
+
+.right-side .alltrends .trends{
+    cursor: pointer;
+    padding: 10px 20px 15px 20px ;
+}
+.right-side .alltrends .trends:hover{
+    background-color:#14171A;
+}
+
+.right-side .alltrends .trends .trend-category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side .alltrends .trends .trend-category span {
+    font-size: 13px;
+    color: gray;
+}
+
+.right-side .alltrends .trends .trend-number {
+    font-size: 13px;
+    color: gray;
+}
+.right-side .alltrends .trends .gana{
+    direction: rtl;
+}
+.right-side .more-trends {
+    color: #00acee;
+    background-color: #17202A;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0px 255px 0px 0px ;
+    margin-top: -10px;
+    border-radius: 0px 0px 10px 10px;
+    height: 55px;
+}
+.right-side .more-trends:hover{
+    background-color: #14171A;
+}
+.right-side .sug h3{
+    padding: 10px 20px 10px 20px ;
+}
+
+.right-side .sug {
+    background-color:#17202A ;
+    border-radius: 30px;
+    margin-top:15px;
+}
+
+
+.right-side .sug .sug-account{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.right-side .sug .sug-account  .sug-data a{
+    text-decoration: none;
+    color: white;
+}
+.right-side .sug .sug-account  .sug-data a:hover{
+    text-decoration: underline;
+}
+
+.right-side .sug .sug-account:hover{
+    background-color: #14171A;
+}
+
+.right-side .sug img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-side .sug .sug-account button {
+    width:80px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side .sug .sug-account .sug-data{
+    margin-left: -100px;
+    cursor: pointer;
+}
+.right-side .sug .sug-account .sug-data .tag{
+    color: gray;
+    font-size: 15px;
+
+}
+.right-side .rules {
+    padding: 15px 0px 50px 30px;
+}
+.right-side .rules span a,.copyright{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    line-height: 1.2;
+    margin-right: 7px;
+}
+
+.right-side .rules span a:hover {
+    text-decoration: underline;
+} 
+
+
+
+
+
